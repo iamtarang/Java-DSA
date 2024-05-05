@@ -3,7 +3,6 @@ package Sorting;
 import java.util.Arrays;
 
 /*
-?	aka Sinking Sort and Exchange Sort
 
 *	Selects the element and puts it in the correct index.
 *	Finds the max in the array (n-1 comparisons)
