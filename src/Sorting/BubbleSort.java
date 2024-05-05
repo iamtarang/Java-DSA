@@ -2,8 +2,9 @@ package Sorting;
 
 import java.util.Arrays;
 
-//? aka Sinking Sort and Exchange Sort
 /*
+?	aka Sinking Sort and Exchange Sort
+
 *	Automatically sets the largest value to the end of array.
 *	Hence, reducing the array size with every iteration will optimize it.
 
@@ -41,9 +42,10 @@ public class BubbleSort {
 				}
 			}
 
-			// ! if you didn't swap for a particular value of i, it means it rest of the array is sorted
+			// ! if you didn't swap for a particular value of i, it means it rest of the
+			// array is sorted
 
-			if (!swapped) { //* if swapped is false, break will occur.
+			if (!swapped) { // * if swapped is false, break will occur.
 				break;
 			}
 		}
