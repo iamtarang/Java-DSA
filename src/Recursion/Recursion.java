@@ -2,10 +2,10 @@ package Recursion;
 
 public class Recursion {
 
-	// * Printing the nth Fibonacci number
+	// * Printing the n Fibonacci number
 
 	public static void main(String[] args) {
-		System.out.println(fibo(8));
+		System.out.println(fibo(5));
 	}
 
 	static int fibo(int n) {
