@@ -147,7 +147,6 @@ public class SinglyLL {
 			System.out.print(temp.value + " -> ");
 			temp = temp.next;
 		}
-
 		System.out.println("END");
 	}
 }
