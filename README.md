@@ -2,6 +2,9 @@
 
 This Repo contains DSA in Java by Kunal Kushwaha on youtube.
 
+## For reference
+![Big-O CheatSheet](big_o_notation_cheat_sheet_by_assyrianic_dclrxt1.png "Big-O CheatSheet")
+
 ## Folder Structure
 
 The workspace contains two folders by default, where:
