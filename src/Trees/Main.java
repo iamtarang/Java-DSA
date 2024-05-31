@@ -8,5 +8,7 @@ public class Main {
 		BinaryTrees tree = new BinaryTrees();
 		tree.populate(scanner);
 		tree.prettyDisplay();
+
+		
 	}
 }
