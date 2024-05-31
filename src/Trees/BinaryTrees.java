@@ -101,7 +101,7 @@ public class BinaryTrees {
 		display(node.right, indent + "\t");
 	}
 
-	public void prettyDisplay(){
+	public void prettyDisplay() {
 		prettyDisplay(root, 0);
 	}
 
@@ -121,5 +121,31 @@ public class BinaryTrees {
 			System.out.println(node.value);
 		}
 		prettyDisplay(node.left, level + 1);
+	}
+
+	public void preOrder() {
+		preOrder(root);
+	}
+
+	private void preOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+		preOrder(node.left);
+		System.out.println(node.value + " ");
+		preOrder(node.right);
+	}
+
+	public void postOrder() {
+		preOrder(root);
+	}
+
+	private void postOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+		preOrder(node.left);
+		preOrder(node.right);
+		System.out.println(node.value + " ");
 	}
 }
