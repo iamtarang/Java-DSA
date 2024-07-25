@@ -8,8 +8,8 @@ public class CeilingOfAnArray {
 		int[] arr = { -20, -16, -5, -2, 0, 3, 14, 26, 30, 44, 94 };
 		int target = 28;
 
-		int ceiling =  ceiling(arr, target);
-		int floor =  floor(arr, target);
+		int ceiling = ceiling(arr, target);
+		int floor = floor(arr, target);
 
 		System.out.println(ceiling);
 		System.out.println(floor);
@@ -19,7 +19,8 @@ public class CeilingOfAnArray {
 		int start = 0;
 		int end = arr.length - 1;
 
-		if (target > arr[end]) return -1;
+		if (target > arr[end])
+			return -1;
 
 		while (start <= end) {
 
@@ -47,8 +48,9 @@ public class CeilingOfAnArray {
 		int start = 0;
 		int end = arr.length - 1;
 
-		if (target < arr[start]) return -1;
-		
+		if (target < arr[start])
+			return -1;
+
 		while (start <= end) {
 
 			// * finding the mid element
@@ -70,4 +72,22 @@ public class CeilingOfAnArray {
 
 		return arr[end];
 	}
+
+	public char nextGreatestLetter(char[] letters, char target) {
+		int start = 0;
+		int end = letters.length - 1;
+
+		while (start <= end) {
+
+			int mid = start + (end - start) / 2;
+
+			if (target < letters[mid]) {
+				end = mid - 1;
+			} else {
+				start = mid + 1;
+			}
+		}
+		return letters[start % letters.length];
+	}
+
 }
